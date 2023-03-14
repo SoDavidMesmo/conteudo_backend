@@ -49,9 +49,25 @@
         echo $variavel[$i] . "<br>";
         }
         //vetor notas
-        $notas= array(5,6,8);
+        $notas= array(5, 6, 8);
         //calcular a média de notas do vetor?
-        $media=...
-        //imprimir média
-        echo$media;
+       
+
+        //ECHO imprimirá o resultado da média na tela
+        echo "A média aritmética dos valores é: " . 
+        //ARRAY_SUM calcula a soma dos valores em um array.
+        //COUNTfaz a contagem  de quantos elementos tem dentro de uma array ou propriedades do objeto.
+        array_sum($notas) / count($notas);
+
+
+        /*Feito pelo professor IVAN
+        $A= array(5, 6, 8);
+        $media = ($A[0] + $A[1] + $A[2] / 3;
+
+         array_sum($alunos[1],[2]);
+        */
 ?>
+
+
+
+        
