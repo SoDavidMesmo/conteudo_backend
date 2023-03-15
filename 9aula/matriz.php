@@ -42,7 +42,7 @@ $produtos = [$produto1,$produto2,$produto3];
     
 }
     echo "<table border='>";
-    //outra forma
+    //outra forma mais facil
     foreach($produtos as $produto){
         echo "<tr>";
         echo "<td>".$produto ["nome"]."</td>";
