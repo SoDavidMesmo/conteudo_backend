@@ -64,7 +64,7 @@
         $A= array(5, 6, 8);
         $media = ($A[0] + $A[1] + $A[2] / 3;
 
-         array_sum($alunos[1],[2]);
+          array_sum($alunos[1],[2]);
         */
 ?>
 
