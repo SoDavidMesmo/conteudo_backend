@@ -29,7 +29,7 @@
         //exibe informações detalhadas sobre uma ou mais variáveis, incluindo seu tipo, tamanho e conteúdo. 
         var_dump ($alunos); 
 
-       //o foreach é uma estrutura de controle de fluxo útil para iterar sobre um array ou 
+      //o foreach é uma estrutura de controle de fluxo útil para iterar sobre um array ou 
     // permite executar uma ação para cada elemento do array ou objeto de forma eficiente.
     foreach($alunos as $key=> $value){
         echo "$key |$value |\n";
