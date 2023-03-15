@@ -15,4 +15,5 @@
     <img src="https://observatoriodocinema.uol.com.br/wp-content/uploads/2021/02/homem-de-ferro-tony-divulgacao.jpg" alt="Homem de ferro" width="10%">
     <?php } ?>
 </body>
+
 </html>
