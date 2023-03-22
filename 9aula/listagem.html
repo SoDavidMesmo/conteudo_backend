@@ -22,7 +22,7 @@
     <script>
         //está pegando o elemento tabela do HTML
         let table = document.querySelector("#produtos");
-        function inserirLinha(Nome,Marca,Preço){
+        function inserirLinha(Nome,Marca,Preço,img){
         //vamos criar uma linha nessa tabela
         let linha = table.insertRow();
         
@@ -30,18 +30,29 @@
         let celNome = linha.insertCell();
         let celMarca = linha.insertCell();
         let celPreco = linha.insertCell();
+        let celImg = linha.insertCell();
+
+        var imagem = document.createElement("img");
+        imagem.setAttribute("src", img);
+        celImg.append(imagem);
 
         //coloca valores nas células
         celNome.innerHTML = Nome;
         celMarca.innerHTML = Marca;
         celPreco.innerHTML = Preço;
+        
     }
     //fecth abre uma URL
-    fetch("http://localhost/3infob/conteudo_backend/9aula/produtos.php")
+    fetch("http://makeup-api.herokuapp.com/api/v1/products.json")
     .then($resposta =>$resposta.json())
     .then($json => {
-        for(var i=0;i<3;i++){
-            inserirLinha($json[i]["nome"],$json[i]["marca"],$json[i]["Preço"]);   
+        for(var produto of $json){
+            inserirLinha(
+                produto["name"],
+                produto["brand"],
+                produto["price"],
+                produto["image_link"]
+            );   
         }
     });
     
