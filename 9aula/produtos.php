@@ -22,4 +22,6 @@ $produtos = [$produto1,$produto2,$produto3];
 
 
 
+
+    echo json_encode($produtos);
     ?>
