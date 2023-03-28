@@ -9,9 +9,18 @@
 <body>
     <h1>Calculadora</h1>
     <hr>
+    <!--o "form action" indica quem recebera as informações fornecidas no n1 e n2-->
+    <form action="exemplo_get.php" method="get">   
+        <!--"label" é uma tag HTML que é usada para associar um rótulo descritivo a um elemento de formulário.
+            Isso ajuda os usuários a entender o propósito ou a função do elemento de formulário. -->
+        <label for="n1">Digite o número 1</label><br>
+        <input type="number"name="n1" id="n1"><br>
 
-    <form action="" method="get">
+        <form action="" method="get">   
+            <label for="n2">Digite o número 2</label><br>
+            <input type="number"name="n2" id="n2"><br>
         
+            <button type="submit">Calcular</button>
     </form>
 </body>
 </html>
