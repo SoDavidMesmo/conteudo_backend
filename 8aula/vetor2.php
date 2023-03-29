@@ -34,5 +34,6 @@
     foreach($alunos as $key=> $value){
         echo "$key |$value |\n";
 
+        
     }
 ?>
