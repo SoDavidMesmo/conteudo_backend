@@ -3,28 +3,22 @@
    //importa o arquivo de conexão
    require_once "../banco/conexao.php";
 
-   if(isset($_POST['nome']) && isset($_POST['login']) &&
-   isset($_POST['senha'])){
-
-      require_once "faz_upload.php";
-
-   $nome = $_POST['nome'];
-   $login = $_POST['login'];
-   $senha = password_hash($_POST['senha'], PASSWORD_BCRYPT);
+   $id = $_POST['idnoticia'];
+   $titulo = $_POST['titulo'];
+   $login = $_POST['materia'];
+   $categoria = ($_POST['categoria'];
 
    //cria uma variável com um comando SQL
-   $SQL = "INSERT INTO `usuario` (`nome`, `login`, `senha`,foto) VALUES (?, ?, ?, ?);";
+   $SQL = "UPDATE `noticia` SET `titulo`= ?, `materia`= ?, `categoria`= ? WHERE  `idnoticia`= ? ;";
  
    //prepara o comando para ser executado no mysql
    $comando = $conexao->prepare($SQL);
 
    //faz a vinculação dos parâmetros ?, ?, ?
-   $comando->bind_param("ssss", $nome, $login, $senha, $nome_foto);
+   $comando->bind_param("sssi", $titulo, $materia, $categoria, $id);
 
    //executa o comando
    $comando->execute();
-
-}
 
    //volta para o formulário
    header("Location: index.php");
