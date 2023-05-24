@@ -17,7 +17,7 @@
 
    //pegar os resultados da consulta - todas as linhas de resultados
    $resultados = $comando -> get_result();
-
+   $noticias=[];
    //pega a primeira linha de resultado da consulta
    while ($noticia = $resultados -> fetch_object()){
       $noticias[] = $noticia;
