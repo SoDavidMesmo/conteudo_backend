@@ -1,6 +1,5 @@
 <?php 
 
-require "../noticia/consultar_categorias.php";
 
 
 ?>
@@ -19,20 +18,23 @@ require "../noticia/consultar_categorias.php";
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         
 
-
-      <?php foreach($categorias as $noticia): ?>
-        <li class="nav-item">
-          <a class="nav-link" 
-          href="index.php?assunto=<?php echo $noticia->categoria; ?>">
-          <?php echo $noticia->categoria; ?>
-        </a>
-        </li>
-
-        <?php endforeach; ?>
         <li class="nav-item">
           <a class="nav-link" 
           href="../noticia/index.php">
-          Acesso restrito
+          Site
+        </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" 
+          href="../noticia/index.php">
+          Notícias
+        </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" 
+          href="../noticia/index.php">
+          Usuario
         </a>
         </li>
 
