@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="barra"> 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.php">Página Inicial</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,6 +43,22 @@
       </div>
     </div>
   </div>
+
+  <style>
+  .barra {
+    background-color: gray;
+  }
+
+  .navbar-custom {
+    background-color: gray;
+  }
+
+  .navbar-brand,
+  .navbar-nav .nav-link {
+    color: white !important;
+  }
+</style>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

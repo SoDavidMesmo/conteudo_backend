@@ -1,4 +1,6 @@
-<?php include "../style/cabecalho.php"; ?>
+<?php include "../style/cabecalho.php"; 
+?>
+
 
 
 
